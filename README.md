@@ -8,52 +8,54 @@ Features
 - Generates short stories (150–300 words) with a clear moral.
 - Accepts natural language prompts from the user.
 - Ensures age-appropriate, coherent storytelling.
-- Uses a structured prompt with system-role instructions for better output quality.
+- Uses a structured prompt with system-role formatting for better quality.
 - Powered by a locally hosted model via the ollama Python API.
 
 Requirements
 ------------
 - Python 3.8+
 - Ollama installed and running locally: https://ollama.com
-- ollama Python package (install using pip)
+- ollama Python package
 
-Installation:
--------------
+To install the Python package:
+------------------------------
 pip install ollama
 
 How to Run
 ----------
 1. Make sure Ollama is running and the model is available locally:
-
    ollama run hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF
 
 2. Run the Python script:
-
    python moral_story_generator.py
 
-3. Example Prompt:
+3. Example prompt:
    Write a story about a greedy monkey who learns to share with his jungle friends.
 
 File Structure
 --------------
-- moral_story_generator.py : Main script to generate moral stories
+- moral_story_generator.py : Main script for generating moral stories
 - README.txt               : Project documentation
 
 Prompt Strategy
 ---------------
-The system prompt guides the model to act as a storyteller who writes engaging, age-appropriate stories that always end with a moral. Special prompt formatting is used to align with LLaMA model token instructions (e.g., <|begin_of_text|>, <|start_header_id|>, etc.).
+The system prompt is designed to guide the model to act as a storyteller who creates engaging and appropriate stories that always end with a clear moral. Formatting tokens such as <|begin_of_text|> and <|start_header_id|> are used to better structure input for LLaMA-based models.
 
 Future Improvements
 -------------------
 - Add a Gradio or Streamlit UI for interactive use
-- Enable dynamic story length and tone settings
-- Extend support for multilingual storytelling
+- Enable story length and tone customization
+- Support multilingual storytelling
+- Introduce feedback-based model refinement
 
 License
 -------
-MIT license
+This project is intended for educational and non-commercial use only. For model usage rights, refer to the license on Hugging Face for hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF.
 
-**Contact**
--Rahul Khatwani
--rahul.23bce10658@vitbhopal.ac.in
--https://github.com/RahulKhatwani007/Story-Generator-Using-GEN-AI
+Contact
+-------
+For feedback, questions, or contributions, please contact:
+
+Name   : Rahul Khatwani 
+Email  : rahul.23bce10658@vitbhopal.ac.in 
+GitHub : 
