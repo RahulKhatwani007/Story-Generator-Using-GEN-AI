@@ -50,7 +50,7 @@ Future Improvements
 
 License
 -------
-This project is intended for educational and non-commercial use only. For model usage rights, refer to the license on Hugging Face for hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF.
+MIT license
 
 Contact
 -------
